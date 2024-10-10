@@ -1,15 +1,57 @@
-.hamburger-btn{
+// .hamburger-btn{
+//     border: none;
+//     background: none;
+
+//     .line {
+//         width: 40px;
+//         height: 5px;
+//         margin: 5px auto;
+//         background-color: black;
+//         display: block;
+//         transition: all 0.3s ease-in-out;
+//         border-radius: 5px;
+
+//         .show &:nth-child(2) {
+//             width: 0;
+//         }
+
+//         .show &:nth-child(1), .show &:nth-child(3) {
+//             transition-delay: 0.3s;
+//         }
+
+//         .show &:nth-child(1) {
+//             transform: translateY(10px);
+//         }
+
+//         .show &:nth-child(3) {
+//             transform: translateY(-10px) rotate(90deg);
+//         }
+
+//     }
+
+//     .show & {
+//         transition: all 0.3s ease-in-out;
+//         transition-delay: 0.6s;
+//         transform: rotate(45deg);
+//     }
+
+//     @media (min-width: 1024px) {
+//         display: none;
+//     }
+// }
+
+.hamburger-btn {
     border: none;
     background: none;
 
     .line {
-        width: 40px;
-        height: 5px;
+        width: 35px;
+        height: 3px; // Changed from 5px to 3px
         margin: 5px auto;
         background-color: black;
         display: block;
         transition: all 0.3s ease-in-out;
-        border-radius: 5px;
+        border-radius: 10px;
 
         .show &:nth-child(2) {
             width: 0;
@@ -20,13 +62,12 @@
         }
 
         .show &:nth-child(1) {
-            transform: translateY(10px);
+            transform: translateY(8px); // Adjusted for new height
         }
 
         .show &:nth-child(3) {
-            transform: translateY(-10px) rotate(90deg);
+            transform: translateY(-8px) rotate(90deg); // Adjusted for new height
         }
-
     }
 
     .show & {
@@ -39,6 +80,8 @@
         display: none;
     }
 }
+
+
 
 .mobile-nav{
     width: 100%;
