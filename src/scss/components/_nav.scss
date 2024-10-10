@@ -140,24 +140,3 @@
     }
 }
 
-/* Tooltip text */
-.tooltip-text {
-  position: absolute;
-  bottom: 150%; /* Position it above the icon */
-  left: 50%;
-  transform: translateX(-50%);
-  color: #000000;
-  padding: 5px 10px;
-  border-radius: 5px;
-  white-space: nowrap;
-  font-size: 0.875rem;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.2s ease-in-out;
-}
-
-/* Show tooltip on hover */
-.group:hover .tooltip-text {
-  opacity: 1;
-  visibility: visible;
-}

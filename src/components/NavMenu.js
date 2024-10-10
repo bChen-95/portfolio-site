@@ -26,30 +26,32 @@ const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   if (windowWidth >= 1024) {
     content = <div className="desktop-nav-menu fixed z-50 right-[2rem] top-[50%] transform -translate-y-1/2">
             <ul className="flex flex-col items-center">
-              <li className='relative group'>
+              <li className='relative group flex flex-col items-center'>
                 <HashLink smooth to="/#page-header">
                   <SvgHov src={homeIconWhiteBg} hoverSrc={homeIconBlackBg} alt="Home Icon" />
                 </HashLink>
-                <span className="tooltip-text absolute z-10 opacity-0 group-hover:opacity-100">Home</span>
+                <span className="tooltip-text absolute z-10 opacity-0 top-0 group-hover:opacity-100 group-hover:animate-fadeInUp">Home</span>
               </li>
               
-              <li>
+              <li className='relative group flex flex-col items-center'>
                 <HashLink smooth to="/#about">
                   <SvgHov src={aboutMeIcon} hoverSrc={aboutMeIconBlackBg} alt="About Me Icon" />
-                  <span className="tooltip-text">About</span>
                 </HashLink>
+                <span className="tooltip-text absolute z-10 opacity-0 top-0 group-hover:animate-fadeInUp group-hover:opacity-100 ">About</span>
               </li>
-              <li>
+
+              <li className='relative group flex flex-col items-center'>
                 <HashLink smooth to="/#projects">
                   <SvgHov src={projectsIcon} hoverSrc={projectsIconBlackBg} alt="Projects Icon" />
-                  <span className="tooltip-text">Projects</span>
                 </HashLink>
+                <span className="tooltip-text absolute z-10 opacity-0 top-0 group-hover:animate-fadeInUp group-hover:opacity-100">Projects</span>
                </li> 
-              <li>
+
+              <li className='relative group flex flex-col items-center'>
                 <HashLink smooth to="/#contact">
                   <SvgHov src={contactMeIcon} hoverSrc={contactMeIconBlackBg} alt="Contact Me Icon" />
-                  <span className="tooltip-text">Contact</span>
                 </HashLink>
+                 <span className="tooltip-text absolute z-10 opacity-0 top-0 group-hover:animate-fadeInUp group-hover:opacity-100">Contact</span>
               </li> 
             </ul>
         </div>;
