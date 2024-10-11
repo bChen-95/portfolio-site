@@ -4,12 +4,12 @@
 
     .line {
         width: 40px;
-        height: 5px;
+        height: 3px;
         margin: 5px auto;
         background-color: black;
         display: block;
         transition: all 0.3s ease-in-out;
-        border-radius: 5px;
+        border-radius: 10px;
 
         .show &:nth-child(2) {
             width: 0;
@@ -20,11 +20,11 @@
         }
 
         .show &:nth-child(1) {
-            transform: translateY(10px);
+            transform: translateY(8px);
         }
 
         .show &:nth-child(3) {
-            transform: translateY(-10px) rotate(90deg);
+            transform: translateY(-8px) rotate(90deg);
         }
 
     }
